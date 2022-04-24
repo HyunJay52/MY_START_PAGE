@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>My Place</title>
+</head>
+
+<body>
+  <div id="sidebar">
+    <span id="sideBtn">✚</span>
+    <div id="myImg" class="hidden">
+      <span>your own images!</span>
+      <input placeholder="write image's url" />
+    </div>
+  </div>
+  <div class="centre-container fix-width">
+    <div class="time-weather fix-width">
+      <div class="local-time large-font">00:00:00</div>
+      <div class="local-weather"></div>
+    </div>
+
+    <form id="login-form" class="hidden fix-width">
+      <input type="text" maxlength="20" required placeholder="what is your name?" />
+      <button>save</button>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+
+    <form id="todo-form" class="fix-width">
+      <input type="text" placeholder="make todo list & press enter" />
+    </form>
+
+    <ul id="todo-list">
+    </ul>
+
+    <div id="quote">
+      <span></span><br />
+      <span></span>
+    </div>
+
+    <div id="empty-all" alt="delete all your information">delete info</div>
+
+  </div>
+  <script src="js/saveUser.js"></script>
+  <script src="js/deleteInfo.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/weather.js"></script>
+  <script src="js/localtime.js"></script>
+  <script src="js/api_key.js"></script>
+</body>
+
+</html>
