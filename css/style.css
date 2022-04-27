@@ -54,7 +54,7 @@ img {
 }
 
 #sidebarList {
-    background-color: #ddd;
+    background-color: #fff;
     width: 200px;
     list-style: none;
 }
@@ -65,6 +65,7 @@ img {
     width: 200px;
     height: 80px;
     background-color: lightyellow;
+    opacity: 100%;
 }
 
 #sidebarList>li>div>span, #sidebarList>li>span{
