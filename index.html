@@ -11,10 +11,22 @@
 <body>
   <div id="sidebar">
     <span id="sideBtn">✚</span>
-    <div id="myImg" class="hidden">
-      <span>your own images!</span>
-      <input placeholder="write image's url" />
-    </div>
+    <ul id="sidebarList" class="hidden sidebarPosition clearfix">
+      <li id="setBackground">
+        <span>Set My Background</span>
+        <div id="myImg" class="hidden sidebarPosition">
+          <span>your own images!</span>
+          <input placeholder="write image's url" />
+        </div>
+      </li>
+      <li>
+        <span>Add Short-Cut</span>
+        <div id="myShortcut" class="hidden">
+          <span>your favourite site</span>
+          <input placeholder="write web site url"/>
+        </div>
+    </ul>
+
   </div>
   <div class="centre-container fix-width">
     <div class="time-weather fix-width">
@@ -51,6 +63,7 @@
   <script src="js/todo.js"></script>
   <script src="js/weather.js"></script>
   <script src="js/localtime.js"></script>
+  <script src="js/sidebar.js"></script>
 </body>
 
 </html>

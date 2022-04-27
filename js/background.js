@@ -2,7 +2,7 @@ const imgs = [
     "img1.jpg", "img2.jpg", "img3.jpg"
 ];
 
-const side = document.querySelector("#sideBtn");
+const setBG = document.querySelector("#sidebar #setBackground");
 const imgBlock = document.querySelector("#myImg");
 
 let imgList = [];
@@ -38,7 +38,7 @@ function handleToggle() {
         imgBlock.classList.remove(HIDDEN_CLASSNAME);
     }
 }
-side.addEventListener("click", handleToggle);
+setBG.addEventListener("click", handleToggle);
 imgBlock.addEventListener("keyup", addImgUrl);
 
 const savedImg = localStorage.getItem(IMG_KEY);

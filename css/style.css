@@ -3,7 +3,10 @@
 body {
     font-family: 'Do Hyeon', sans-serif;
 }
-
+.clearfix { 
+    margin: 0px;
+    padding: 0px;
+}
 .hidden {
     display: none;
 }
@@ -41,22 +44,34 @@ img {
     opacity: 80%;
 }
 
-#myImg {
+.sidebarPosition {
+    position: fixed;
+    top: 47%;
+    left: 45px;
+    width: 200px;
+    border-radius: 10px;
+    opacity: 80%;
+}
+
+#sidebarList {
+    background-color: #ddd;
+    width: 200px;
+    list-style: none;
+}
+#myImg, #myShortcut{
     position: fixed;
     top: 47%;
     left: 45px;
     width: 200px;
     height: 80px;
     background-color: lightyellow;
-    border-radius: 10px;
-    opacity: 80%;
 }
 
-#myImg>span {
+#sidebarList>li>div>span, #sidebarList>li>span{
     font-size: 15px;
 }
 
-#myImg>input {
+#myImg>input,  #myShortcut>input{
     width: 150px;
     height: 20px;
     line-height: 20px;
